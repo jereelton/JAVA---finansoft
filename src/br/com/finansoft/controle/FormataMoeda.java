@@ -32,6 +32,9 @@ public class FormataMoeda {
         
         switch ( this.digitosCampo ) {
         
+            case 0:
+                this.mascaraFormatacao = "0,00";
+                break;
             case 1:
                 this.mascaraFormatacao = "0,0#";
                 break;
