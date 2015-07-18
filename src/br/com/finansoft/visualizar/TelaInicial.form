@@ -19,7 +19,7 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Sistema"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Cursor Default"/>
+              <Color id="Cursor Padr&#xe3;o"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -37,9 +37,6 @@
             <MenuItem class="javax.swing.JMenuItem" name="ItemMenuSairJMenuItem">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Sair"/>
-                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-                  <Insets value="[0, 0, 0, 0]"/>
-                </Property>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[200, 25]"/>
                 </Property>
@@ -167,7 +164,13 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                                  <Component id="adicionarDespesaJButton" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+                                  <Component id="salvarDespesaJButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="outrasDespesasJTextField" max="32767" attributes="0"/>
                                       <Component id="textoDescricaoDespesaJLabel" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -177,27 +180,28 @@
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="textoMoedaJLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="adicionarDespesaJButton" min="-2" pref="80" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="textoValorDespesaJLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="valorDespesaJTextField" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="textoValorDespesaJLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="salvarDespesaJButton" min="-2" max="-2" attributes="0"/>
-                              <Component id="valorDespesaJTextField" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="salvarDespesasJButton" min="-2" max="-2" attributes="0"/>
-                              <Component id="textoDataDespesaJLabel" min="-2" max="-2" attributes="0"/>
-                              <Component id="dataDespesaJTextField" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                                  <Component id="salvarDespesasJButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="textoDataDespesaJLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dataDespesaJDateChooser" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="26" max="32767" attributes="0"/>
+                  <EmptySpace pref="15" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -221,16 +225,20 @@
                       <Component id="textoDataDespesaJLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="descricaoDespesaJComboBox" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="dataDespesaJTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoMoedaJLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="valorDespesaJTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="descricaoDespesaJComboBox" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="textoMoedaJLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="valorDespesaJTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="outrasDespesasJCheckBox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="outrasDespesasJTextField" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="dataDespesaJDateChooser" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="outrasDespesasJCheckBox" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="outrasDespesasJTextField" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
@@ -239,7 +247,7 @@
                       </Group>
                       <Component id="salvarDespesasJButton" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="25" max="32767" attributes="0"/>
+                  <EmptySpace pref="26" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -314,19 +322,6 @@
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[190, 24]"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="dataDespesaJTextField">
-          <Properties>
-            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[130, 24]"/>
-            </Property>
-            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[130, 24]"/>
-            </Property>
-            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[130, 24]"/>
             </Property>
           </Properties>
         </Component>
@@ -436,6 +431,22 @@
           <Events>
             <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="valorDespesaJTextFieldKeyReleased"/>
           </Events>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="dataDespesaJDateChooser">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[215, 24]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[215, 24]"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[215, 24]"/>
+            </Property>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

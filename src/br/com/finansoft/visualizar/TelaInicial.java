@@ -39,13 +39,13 @@ public class TelaInicial extends javax.swing.JFrame {
         textoMoedaJLabel = new javax.swing.JLabel();
         logoSistemaJLabel = new javax.swing.JLabel();
         outrasDespesasJTextField = new javax.swing.JTextField();
-        dataDespesaJTextField = new javax.swing.JTextField();
         descricaoDespesaJComboBox = new javax.swing.JComboBox();
         outrasDespesasJCheckBox = new javax.swing.JCheckBox();
         adicionarDespesaJButton = new javax.swing.JButton();
         salvarDespesaJButton = new javax.swing.JButton();
         salvarDespesasJButton = new javax.swing.JButton();
         valorDespesaJTextField = new javax.swing.JTextField();
+        dataDespesaJDateChooser = new com.toedter.calendar.JDateChooser();
         menuSistemaJMenuBar = new javax.swing.JMenuBar();
         menuSistemaJMenu = new javax.swing.JMenu();
         ItemMenuSairJMenuItem = new javax.swing.JMenuItem();
@@ -87,10 +87,6 @@ public class TelaInicial extends javax.swing.JFrame {
         outrasDespesasJTextField.setMaximumSize(new java.awt.Dimension(190, 24));
         outrasDespesasJTextField.setMinimumSize(new java.awt.Dimension(190, 24));
         outrasDespesasJTextField.setPreferredSize(new java.awt.Dimension(190, 24));
-
-        dataDespesaJTextField.setMaximumSize(new java.awt.Dimension(130, 24));
-        dataDespesaJTextField.setMinimumSize(new java.awt.Dimension(130, 24));
-        dataDespesaJTextField.setPreferredSize(new java.awt.Dimension(130, 24));
 
         descricaoDespesaJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Escolha uma despesa...", "Gasolina", "Supermercado", "Farmacia", "Conta de Luz", "Conta de Agua", "Condominio", " " }));
         descricaoDespesaJComboBox.setMaximumSize(new java.awt.Dimension(190, 24));
@@ -142,6 +138,11 @@ public class TelaInicial extends javax.swing.JFrame {
             }
         });
 
+        dataDespesaJDateChooser.setBackground(new java.awt.Color(255, 255, 255));
+        dataDespesaJDateChooser.setMaximumSize(new java.awt.Dimension(215, 24));
+        dataDespesaJDateChooser.setMinimumSize(new java.awt.Dimension(215, 24));
+        dataDespesaJDateChooser.setPreferredSize(new java.awt.Dimension(215, 24));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -158,7 +159,12 @@ public class TelaInicial extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(38, 38, 38)
+                                .addGap(92, 92, 92)
+                                .addComponent(adicionarDespesaJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(86, 86, 86)
+                                .addComponent(salvarDespesaJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(outrasDespesasJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(textoDescricaoDespesaJLabel)
@@ -166,21 +172,20 @@ public class TelaInicial extends javax.swing.JFrame {
                                     .addComponent(outrasDespesasJCheckBox, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(textoMoedaJLabel)
-                                .addGap(2, 2, 2))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(adicionarDespesaJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(86, 86, 86)))
+                                .addGap(2, 2, 2)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(textoValorDespesaJLabel)
+                                    .addComponent(valorDespesaJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(textoValorDespesaJLabel)
-                            .addComponent(salvarDespesaJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(valorDespesaJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(46, 46, 46)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(salvarDespesasJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(textoDataDespesaJLabel)
-                            .addComponent(dataDespesaJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(26, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(74, 74, 74)
+                                .addComponent(salvarDespesasJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(textoDataDespesaJLabel)
+                                    .addComponent(dataDespesaJDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -199,22 +204,24 @@ public class TelaInicial extends javax.swing.JFrame {
                     .addComponent(textoValorDespesaJLabel)
                     .addComponent(textoDataDespesaJLabel))
                 .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(descricaoDespesaJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(dataDespesaJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textoMoedaJLabel)
-                    .addComponent(valorDespesaJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(outrasDespesasJCheckBox)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(outrasDespesasJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(descricaoDespesaJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(textoMoedaJLabel)
+                            .addComponent(valorDespesaJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(outrasDespesasJCheckBox)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(outrasDespesasJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(dataDespesaJDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(salvarDespesaJButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(adicionarDespesaJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(salvarDespesasJButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         menuSistemaJMenuBar.setMaximumSize(new java.awt.Dimension(600, 25));
@@ -230,7 +237,6 @@ public class TelaInicial extends javax.swing.JFrame {
         menuSistemaJMenu.setPreferredSize(new java.awt.Dimension(100, 25));
 
         ItemMenuSairJMenuItem.setText("Sair");
-        ItemMenuSairJMenuItem.setMargin(new java.awt.Insets(0, 0, 0, 0));
         ItemMenuSairJMenuItem.setMaximumSize(new java.awt.Dimension(200, 25));
         ItemMenuSairJMenuItem.setMinimumSize(new java.awt.Dimension(200, 25));
         ItemMenuSairJMenuItem.setPreferredSize(new java.awt.Dimension(200, 25));
@@ -304,11 +310,12 @@ public class TelaInicial extends javax.swing.JFrame {
     private void salvarDespesaJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarDespesaJButtonActionPerformed
         
         descricaoDespesaJComboBox.setSelectedIndex(0);
+        descricaoDespesaJComboBox.setEnabled(true);
         outrasDespesasJCheckBox.setSelected(false);
         outrasDespesasJTextField.setText("");
         outrasDespesasJTextField.setEnabled(false);
         valorDespesaJTextField.setText("");
-        dataDespesaJTextField.setText("");
+        dataDespesaJDateChooser.setDate(null);
         
     }//GEN-LAST:event_salvarDespesaJButtonActionPerformed
 
@@ -370,7 +377,7 @@ public class TelaInicial extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem ItemMenuSairJMenuItem;
     private javax.swing.JButton adicionarDespesaJButton;
-    private javax.swing.JTextField dataDespesaJTextField;
+    private com.toedter.calendar.JDateChooser dataDespesaJDateChooser;
     private javax.swing.JComboBox descricaoDespesaJComboBox;
     private javax.swing.JMenuItem itemMenuRelatoriosJMenuItem;
     private javax.swing.JPanel jPanel1;
