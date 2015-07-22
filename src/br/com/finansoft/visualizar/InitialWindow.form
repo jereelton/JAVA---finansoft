@@ -121,17 +121,17 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+          <Component id="finansoftMainPanel" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+          <Component id="finansoftMainPanel" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="finansoftMainPanel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -154,11 +154,11 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-                          <Component id="logoSistemaJLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="systemLogoLabel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="textoFinansoftJLabel" min="-2" max="-2" attributes="0"/>
-                              <Component id="textoControleFinanceiroPessoalJLabel" min="-2" max="-2" attributes="0"/>
+                              <Component id="appNameLabel" min="-2" max="-2" attributes="0"/>
+                              <Component id="appDescriptionLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -167,41 +167,41 @@
                                   <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                                   <Component id="adicionarDespesaJButton" min="-2" pref="80" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
-                                  <Component id="salvarDespesaJButton" min="-2" max="-2" attributes="0"/>
+                                  <Component id="clearButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="outrasDespesasJTextField" max="32767" attributes="0"/>
-                                      <Component id="textoDescricaoDespesaJLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="descricaoDespesaJComboBox" max="32767" attributes="0"/>
-                                      <Component id="outrasDespesasJCheckBox" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
+                                      <Component id="othersExpensesTextField" max="32767" attributes="0"/>
+                                      <Component id="spendingDescriptionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="expenseDescriptionComboBox" max="32767" attributes="0"/>
+                                      <Component id="otherExpensesCheckBox" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="textoMoedaJLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="currencyLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="textoValorDespesaJLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="valorDespesaJTextField" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spendingValueLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="expenseValueTextField" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                                  <Component id="salvarDespesasJButton" min="-2" max="-2" attributes="0"/>
+                                  <Component id="saveButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="textoDataDespesaJLabel" min="-2" max="-2" attributes="0"/>
-                                      <Component id="dataDespesaJDateChooser" max="32767" attributes="0"/>
+                                      <Component id="spendingDateLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dateChooser" min="-2" pref="128" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="15" max="32767" attributes="0"/>
+                  <EmptySpace pref="86" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -210,42 +210,42 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="logoSistemaJLabel" min="-2" max="-2" attributes="0"/>
+                      <Component id="systemLogoLabel" min="-2" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                          <Component id="textoFinansoftJLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="appNameLabel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="textoControleFinanceiroPessoalJLabel" min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="appDescriptionLabel" min="-2" pref="19" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="textoDescricaoDespesaJLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoValorDespesaJLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textoDataDespesaJLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="spendingDescriptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="spendingValueLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="spendingDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="descricaoDespesaJComboBox" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                              <Component id="textoMoedaJLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="valorDespesaJTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="expenseDescriptionComboBox" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="currencyLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="expenseValueTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="outrasDespesasJCheckBox" min="-2" max="-2" attributes="0"/>
+                          <Component id="otherExpensesCheckBox" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="outrasDespesasJTextField" min="-2" max="-2" attributes="0"/>
+                          <Component id="othersExpensesTextField" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="dataDespesaJDateChooser" min="-2" max="-2" attributes="0"/>
+                      <Component id="dateChooser" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="salvarDespesaJButton" max="32767" attributes="0"/>
+                          <Component id="clearButton" max="32767" attributes="0"/>
                           <Component id="adicionarDespesaJButton" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="salvarDespesasJButton" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="saveButton" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="26" max="32767" attributes="0"/>
               </Group>
@@ -253,7 +253,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="textoDescricaoDespesaJLabel">
+        <Component class="javax.swing.JLabel" name="spendingDescriptionLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="14" style="1"/>
@@ -261,7 +261,7 @@
             <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o Despesa"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="textoValorDespesaJLabel">
+        <Component class="javax.swing.JLabel" name="spendingValueLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="14" style="1"/>
@@ -269,7 +269,7 @@
             <Property name="text" type="java.lang.String" value="Valor Despesa"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="textoDataDespesaJLabel">
+        <Component class="javax.swing.JLabel" name="spendingDateLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="14" style="1"/>
@@ -277,7 +277,7 @@
             <Property name="text" type="java.lang.String" value="Data Despesa"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="textoFinansoftJLabel">
+        <Component class="javax.swing.JLabel" name="appNameLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="36" style="1"/>
@@ -288,7 +288,7 @@
             <Property name="text" type="java.lang.String" value="FINANSOFT"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="textoControleFinanceiroPessoalJLabel">
+        <Component class="javax.swing.JLabel" name="appDescriptionLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="12" style="0"/>
@@ -296,7 +296,7 @@
             <Property name="text" type="java.lang.String" value="Controle Financeiro Pessoal"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="textoMoedaJLabel">
+        <Component class="javax.swing.JLabel" name="currencyLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="14" style="1"/>
@@ -304,14 +304,14 @@
             <Property name="text" type="java.lang.String" value="R$"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="logoSistemaJLabel">
+        <Component class="javax.swing.JLabel" name="systemLogoLabel">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/visualizar/imagens/icone_controle_financeiro.png"/>
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="outrasDespesasJTextField">
+        <Component class="javax.swing.JTextField" name="othersExpensesTextField">
           <Properties>
             <Property name="enabled" type="boolean" value="false"/>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -325,7 +325,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="descricaoDespesaJComboBox">
+        <Component class="javax.swing.JComboBox" name="expenseDescriptionComboBox">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="8">
@@ -350,15 +350,15 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="descricaoDespesaJComboBoxActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="expenseDescriptionComboBoxActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="outrasDespesasJCheckBox">
+        <Component class="javax.swing.JCheckBox" name="otherExpensesCheckBox">
           <Properties>
             <Property name="text" type="java.lang.String" value="Outras Despesas"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="outrasDespesasJCheckBoxActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="otherExpensesCheckBoxActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="adicionarDespesaJButton">
@@ -378,7 +378,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="salvarDespesaJButton">
+        <Component class="javax.swing.JButton" name="clearButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/visualizar/imagens/icone_limpar.png"/>
@@ -395,10 +395,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salvarDespesaJButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clearButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="salvarDespesasJButton">
+        <Component class="javax.swing.JButton" name="saveButton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/visualizar/imagens/icone_salvar.png"/>
@@ -415,7 +415,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="valorDespesaJTextField">
+        <Component class="javax.swing.JTextField" name="expenseValueTextField">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -429,22 +429,13 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="valorDespesaJTextFieldKeyReleased"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="expenseValueTextFieldKeyReleased"/>
           </Events>
         </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="dataDespesaJDateChooser">
+        <Component class="com.toedter.calendar.JDateChooser" name="dateChooser">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[215, 24]"/>
-            </Property>
-            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[215, 24]"/>
-            </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[215, 24]"/>
+              <Dimension value="[87, 24]"/>
             </Property>
           </Properties>
         </Component>
