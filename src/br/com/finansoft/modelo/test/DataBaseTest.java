@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  * @author Fernando
  */
 public class DataBaseTest {
-    private static String url    = "jdbc:postgresql://localhost:5432/finansoft";
+    private static String url    = "jdbc:postgresql://localhost:5432/postgres";
     private static String user   = "postgres";
     private static String passwd = "postgres";
     
@@ -24,9 +24,10 @@ public class DataBaseTest {
         DataBaseHandle dataBaseHandle = new DataBaseHandle(url, user, passwd);
         dataBaseHandle.getConnection();
         
+        String insert = "insert into finansoft.gastos (id, description, value, date) values ('3', 'Padaria', '10.50', '21-07-2015');";
         try {
-            if(dataBaseHandle.isConnected())
-                System.out.println("Connected sucessfully.");
+            dataBaseHandle.runStatement(insert);
+           
         } catch (SQLException ex) {
             Logger.getLogger(DataBaseTest.class.getName()).log(Level.SEVERE, null, ex);
         }

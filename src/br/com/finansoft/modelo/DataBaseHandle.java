@@ -32,18 +32,26 @@ public class DataBaseHandle {
         try {
             System.out.println("Url." + this.url + " User." + this.user + " Passwd." + passwd);
             connection = DriverManager.getConnection(this.url, this.user, this.passwd);
+            if(connection != null)
+                System.out.println("Connection realized successfully.");
         } catch (SQLException ex) {
             System.out.println("Unable to open a connection with DB");
         }
     }
     
-    public boolean isConnected() throws SQLException {
+    public void runStatement(String sqlStatement) throws SQLException {
+        Statement statement = connection.createStatement();
+    
+        statement.execute(sqlStatement);
+    }
+    
+   /* public boolean isConnected() throws SQLException {
         if(! connection.isClosed()) 
             return true;
         
         return false;
     }
-    
+    */
     public boolean closeConnection() {
         boolean isClosedSuccessfully = false;
         
